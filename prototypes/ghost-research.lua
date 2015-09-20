@@ -3,12 +3,12 @@ data:extend(
   {
     type = "technology",
     name = "ghost-life-1",
-    icon = "__GDIW__/graphics/research-ghosts-1.png",
+    icon = "__reapparition__/graphics/research-ghosts-1.png",
     effects =
     {
       {
         type = "ghost-time-to-live",
-        modifier = 60 * 30 * 1
+        modifier = 60 * 60 * 0.5
       }
     },
     prerequisites = {"logistics-2", "automation-2"},
@@ -28,12 +28,12 @@ data:extend(
   {
     type = "technology",
     name = "ghost-life-2",
-    icon = "__GDIW__/graphics/research-ghosts-2.png",
+    icon = "__reapparition__/graphics/research-ghosts-2.png",
     effects =
     {
       {
         type = "ghost-time-to-live",
-        modifier = 60 * 30 * 3
+        modifier = 60 * 60 * 1.5
       }
     },
     prerequisites = {"ghost-life-1", "advanced-electronics-2"},
@@ -47,18 +47,19 @@ data:extend(
       },
       time = 30
     },
+    upgrade = true,
     order = "c-k-b-c",
   },
   
   {
     type = "technology",
     name = "ghost-life-3",
-    icon = "__GDIW__/graphics/research-ghosts-3.png",
+    icon = "__reapparition__/graphics/research-ghosts-3.png",
     effects =
     {
       {
         type = "ghost-time-to-live",
-        modifier = 60 * 60 * 7.5
+        modifier = 60 * 60 * 3
       }
     },
     prerequisites = {"ghost-life-2", "automated-construction"},
@@ -73,18 +74,19 @@ data:extend(
       },
       time = 30
     },
+    upgrade = true,
     order = "c-k-b-d",
   },
   
   {
     type = "technology",
     name = "ghost-life-4",
-    icon = "__GDIW__/graphics/research-ghosts-4.png",
+    icon = "__reapparition__/graphics/research-ghosts-4.png",
     effects =
     {
       {
         type = "ghost-time-to-live",
-        modifier = 60 * 60 * 10
+        modifier = 60 * 60 * 5
       }
     },
     prerequisites = {"ghost-life-3", "alien-technology"},
@@ -99,21 +101,22 @@ data:extend(
       },
       time = 30
     },
+    upgrade = true,
     order = "c-k-b-e",
   },
   
   {
     type = "technology",
     name = "ghost-life-5",
-    icon = "__GDIW__/graphics/research-ghosts-5.png",
+    icon = "__reapparition__/graphics/research-ghosts-5.png",
     effects =
     {
       {
         type = "ghost-time-to-live",
-        modifier = 60 * 60 * 15
+        modifier = 60 * 60 * 5
       }
     },
-    prerequisites = {"ghost-life-4","rocket-shooting-speed-3"},
+    prerequisites = {"ghost-life-4","rocket-speed-3"},
     unit =
     {
       count = 50,
@@ -122,10 +125,11 @@ data:extend(
         {"science-pack-1", 3},
         {"science-pack-2", 3},
         {"science-pack-3", 2},
-        {"science-pack-4", 1}
+        {"alien-science-pack", 1}
       },
       time = 30
     },
+    upgrade = true,
     order = "c-k-b-f",
   },
   
