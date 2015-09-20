@@ -1,0 +1,2 @@
+require("prototypes.ghost-research")
+

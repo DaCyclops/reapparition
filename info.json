@@ -1,0 +1,10 @@
+{
+  "name": "reapparition",
+  "version": "0.5.0",
+  "title": "Reapparition",
+  "author": "DaCyclops",
+  "homepage": "",
+  "contact": "dacyclops@dacyclops.com",
+  "description": "Extending Ghost Building support from Early Game to Late Game",
+  "dependencies": ["base >= 0.12.0"]
+}
